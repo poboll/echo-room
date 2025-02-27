@@ -1,7 +1,7 @@
 # ⚡ 回声谷即时通讯系统
 
 <p align="center">
-  <img src="https://c-ssl.duitang.com/uploads/blog/202402/17/N5SG04P6iPy7qXw.jpg" width="400">
+  <img src="https://c-ssl.duitang.com/uploads/blog/202402/17/N5SG04P6iPy7qXw.jpg" width="200">
   <h3 align="center">基于SpringBoot+Vue3的实时通信解决方案</h3>
 </p>
 
@@ -105,7 +105,6 @@ services:
     depends_on:
       - redis
       - mysql
-```
 
 ---
 

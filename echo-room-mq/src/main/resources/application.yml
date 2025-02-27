@@ -1,0 +1,45 @@
+server:
+  port: 8084
+
+# 邮件相关配置
+spring:
+  application:
+    name: subtlechat-mailserver
+  mail:
+    host: smtp.gmail.com  # SMTP 服务器
+    protocol: smtp
+    default-encoding: UTF-8
+    # 邮箱名（你的 Gmail 地址，例如 example@gmail.com）
+    username: your-email@gmail.com
+    # Gmail 的应用专用密码（不是登录密码，需生成）
+    password: your-app-specific-password
+    port: 587  # Gmail 使用 587 端口（TLS）
+    properties:
+      mail:
+        smtp:
+          auth: true  # 启用认证
+          starttls:
+            enable: true  # 启用 STARTTLS
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory  # SSL 工厂类
+        debug: true  # 调试模式，输出邮件发送日志
+
+  # RabbitMQ 的配置
+  rabbitmq:
+    host: your-rabbitmq-host  # 替换为你的 RabbitMQ 主机地址
+    port: your-rabbitmq-port  # 替换为你的 RabbitMQ 端口
+    username: your-rabbitmq-username  # 替换为你的 RabbitMQ 用户名
+    password: your-rabbitmq-password  # 替换为你的 RabbitMQ 密码
+    virtual-host: /subtlechat
+    # 开启手动确认是否消息消费成功
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 100
+
+  # Redis 的配置
+  redis:
+    database: 0
+    password: your-redis-password  # 替换为你的 Redis 密码
+    host: your-redis-host  # 替换为你的 Redis 主机地址
+    port: your-redis-port  # 替换为你的 Redis 端口
