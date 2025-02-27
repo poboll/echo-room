@@ -14,11 +14,11 @@
     </parent>
 
     <!-- Project Info -->
-    <groupId>com.dcqc</groupId>
-    <artifactId>springboot-init</artifactId>
+    <groupId>com.caiths</groupId>
+    <artifactId>echo-room</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-init</name>
-    <description>springboot 初始项目</description>
+    <name>echo-room</name>
+    <description>回声谷-即时通讯系统</description>
 
     <!-- Properties -->
     <properties>
