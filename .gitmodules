@@ -1,0 +1,3 @@
+[submodule "echo-room-api"]
+	path = echo-room-api
+	url = https://github.com/poboll/echo-room-sdk
